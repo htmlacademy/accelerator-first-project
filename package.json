@@ -10,6 +10,7 @@
     "build": "vite build --emptyOutDir",
     "preview": "vite preview --open",
     "convert-rastr": "node convert-rastr.js",
+    "w3c": "html-validator source --quiet",
     "linthtml": "linthtml source",
     "html-validate": "html-validate source/index.html",
     "lint-bem": "node bem-tree.js",

@@ -19,8 +19,9 @@ npm run dev
 
 ## Самопроверки
 В проекте используется множество инструментов для самопроверки. Используйте их:
+- `npm run w3c`: проверяет валидность HTML;
 - `npm run linthtml`: проверяет разметку по правилам linthtml;
-- `npm run html-validate`: проверяет валидность HTML;
+- `npm run html-validate`: проверяет HTML;
 - `npm run lint-bem`: проверяет БЭМ;
 - `npm run stylelint`: проверяет стили по правилам stylelint;
 - `npm run lint-js`: проверяет скрипты по правилам eslint;
