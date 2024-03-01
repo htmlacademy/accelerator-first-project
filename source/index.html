@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="body">
+  <body class="page-body">
     <!-- пример использования спрайта -->
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
+    <div class="page-body__hero hero"  data-test="hero">hero</div>
+    <div class="about__section"  data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
