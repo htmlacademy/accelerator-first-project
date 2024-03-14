@@ -5,17 +5,8 @@
   font-weight: 600;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"),
-    url("../fonts/AlumniSans-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 800;
-  font-family: "Alumni Sans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"),
-    url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
+  src: url("../fonts/AlumniSans-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/AlumniSans-VariableFont_wght.woff") format("woff");
 }
 
 //Font Roboto
@@ -25,24 +16,6 @@
   font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/Roboto-Condensed-Light.woff2") format("woff2"),
-    url("../fonts/Roboto-Condensed-Light.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Roboto Condensed";
-  font-display: swap;
-  src: url("../fonts/Roboto-Condensed-Regular.woff2") format("woff2"),
-    url("../fonts/Roboto-Condensed-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Roboto Condensed";
-  font-display: swap;
-  src: url("../fonts/Roboto-Condensed-Bold.woff2") format("woff2"),
-    url("../fonts/Roboto-Condensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-VariableFont_wght.woff") format("woff");
 }

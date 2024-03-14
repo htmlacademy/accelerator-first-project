@@ -1,14 +1,15 @@
 .hero {
-  min-height: 574px;
+  width: 100%;
   background: $main-gradient;
+  min-height: 491px;
 
-  @media (max-width: $tablet-width) {
-    min-height: 554px;
+  @media (min-width: $tablet-width) {
+    min-height: 574px;
     margin-bottom: 100px;
   }
 
-  @media (max-width: $mobile-width) {
-    min-height: 491px;
+  @media (min-width: $desktop-width) {
+    min-height: 574px;
     margin-bottom: 64px;
   }
 }

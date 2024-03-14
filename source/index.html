@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/AlumniSans-VariableFont_wght.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/RobotoCondensed-VariableFont_wght.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -18,11 +17,13 @@
     <header class="header">
       <div class="header__wrapper container">
         <p class="header__logo logo">
-          <a aria-hidden="true">
-            <svg width="130" height="26" focusable="false" aria-hidden="true" alt="Логотип Фитнес клуба">
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" srcset="img/logo/logo-desktop.svg" width="130"
+              height="26">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110"
+              height="22">
+            <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Drink2Go.">
+          </picture>
         </p>
 
         <nav class="header__nav">
@@ -42,7 +43,7 @@
               <li class="main__list-item">Групповые занятия</li>
               <li class="main__list-item">Кардио-зона</li>
             </ul>
-            <h1 class="main__list-header">Фитнес<br />центр</h1>
+            <h1 class="main__list-header">Фитнес<br /><span class="main__list-span">центр</span></h1>
           </div>
 
           <a class="main__button button" href="#tickets">Купить абонемент</a>
@@ -50,8 +51,9 @@
 
         <p class="main__picture">
           <picture>
-            <source type="image/webp" srcset="img/main.webp 1x, img/main@2x.webp 2x" width="500" height="524" />
-            <img src="img/main.jpg" srcset="img/main@2x.jpg 2x" width="500" height="524" loading="lazy"
+            <source type="image/webp" srcset="img/hero/hero@1x.webp 1x, img/hero/hero@2x.webp 2x" width="500"
+              height="524" />
+            <img src="img/hero/hero@1x.jpg" srcset="img/hero/hero@2x.jpg 2x" width="500" height="524" loading="lazy"
               alt="Портрет мужчины" />
           </picture>
         </p>
