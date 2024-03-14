@@ -1,0 +1,28 @@
+.button {
+  display: inline-flex;
+  padding: 24px 42px;
+  justify-content: center;
+  word-break: break-word;
+  outline-offset: 3px;
+  text-decoration: none;
+  color: $color-default-white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  transition: opacity 0.3s ease;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid;
+  }
+}

@@ -1,0 +1,14 @@
+.hero {
+  min-height: 574px;
+  background: $main-gradient;
+
+  @media (max-width: $tablet-width) {
+    min-height: 554px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 491px;
+    margin-bottom: 64px;
+  }
+}

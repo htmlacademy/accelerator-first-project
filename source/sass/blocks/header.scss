@@ -1,0 +1,66 @@
+.header {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  gap: 10px 30px;
+  justify-content: space-between;
+  min-height: 86px;
+  padding-top: 29px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 84px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 54px;
+  }
+}
+
+.header__logo {
+  margin-right: 30px;
+}
+
+.header__nav {
+  align-self: flex-start;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: $alumni;
+}
+
+.header__phone {
+  color: $color-default-white;
+  font-weight: $semi-bold;
+  font-size: 32px;
+  line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+
+  &:hover,
+  &:disabled {
+    opacity: 0.8;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: $bold;
+  }
+
+  @media (max-width: $mobile-width) {
+    letter-spacing: 0.4px;
+    font-weight: $semi-bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

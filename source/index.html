@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness</title>
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <div data-test="hero" class="hero">
+    <header class="header">
+      <div class="header__wrapper container">
+        <p class="header__logo logo">
+          <a aria-hidden="true">
+            <svg width="130" height="26" focusable="false" aria-hidden="true" alt="Логотип Фитнес клуба">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </p>
+
+        <nav class="header__nav">
+          <a class="header__phone" href="tel:88005555555">8 800 555-55-55</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="main__wrapper container">
+        <div class="main__about">
+          <p class="main__description">Омск</p>
+
+          <div class="main__list-wrapper">
+            <ul class="main__list">
+              <li class="main__list-item">Тренажёрный зал</li>
+              <li class="main__list-item">Групповые занятия</li>
+              <li class="main__list-item">Кардио-зона</li>
+            </ul>
+            <h1 class="main__list-header">Фитнес<br />центр</h1>
+          </div>
+
+          <a class="main__button button" href="#tickets">Купить абонемент</a>
+        </div>
+
+        <p class="main__picture">
+          <picture>
+            <source type="image/webp" srcset="img/main.webp 1x, img/main@2x.webp 2x" width="500" height="524" />
+            <img src="img/main.jpg" srcset="img/main@2x.jpg 2x" width="500" height="524" loading="lazy"
+              alt="Портрет мужчины" />
+          </picture>
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
