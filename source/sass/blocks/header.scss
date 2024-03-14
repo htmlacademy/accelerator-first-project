@@ -3,8 +3,8 @@
   gap: 10px 30px;
   justify-content: space-between;
   min-height: 54px;
-  padding-top: 17px;
-  padding-left: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media (min-width: $tablet-width) {
     padding: 31px 44px 0 45px;
@@ -27,6 +27,7 @@
   z-index: 5;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 14px;
   gap: 20px;
   font-family: $alumni;
 }
@@ -36,13 +37,31 @@
   color: $color-default-white;
   letter-spacing: 0.4px;
   font-weight: $semi-bold;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 27px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 
-  &:hover,
+
   &:disabled {
-    opacity: 0.8;
+    opacity: 0.5;
+    color: $color-ghost-white;
   }
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.50);
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
+  }
+
+
 
   @media (min-width: $tablet-width) {
     margin-top: -2px;

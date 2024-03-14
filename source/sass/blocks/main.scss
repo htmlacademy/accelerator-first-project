@@ -23,7 +23,7 @@
   grid-template-rows: repeat(3, min-content);
   color: $color-default-white;
   font-family: $alumni;
-  margin-top: 40px;
+  margin-top: 48px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -37,10 +37,11 @@
 
 .main__description {
   margin: 0;
-  font-size: 28px;
-  line-height: 33px;
-  margin-right: 5px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  margin-right: 14px;
+  margin-bottom: 13px;
   font-weight: $semi-bold;
 
   @media (min-width: $tablet-width) {
@@ -60,9 +61,9 @@
 
 .main__button {
   position: absolute;
-  top: 522px;
-  left: 402px;
-  padding: 26px 17px 24px 16px;
+  top: 320px;
+  left: 15px;
+  padding: 22px 5px 22px 6px;
   letter-spacing: 0.01em;
   cursor: pointer;
   user-select: none;
@@ -72,7 +73,7 @@
   font-weight: $bold;
   line-height: 12px;
   font-family: $roboto;
-  width: 100%;
+  width: 275px;
   background-color: transparent;
   border: 2px solid $color-default-white;
   color: $color-default-white;
@@ -112,20 +113,20 @@
 .main__list-header {
   flex-grow: 1;
   margin: 0;
-  margin-bottom: 39px;
-  margin-right: 1px;
   letter-spacing: 0.05em;
   text-align: right;
   text-transform: uppercase;
-  line-height: 86px;
+  line-height: 63px;
   font-weight: $semi-bold;
-  font-size: 72px;
+  font-size: 57px;
   margin-bottom: 22px;
+  padding-right: 14px;
   -webkit-text-stroke-width: 3px;
   margin-left: auto;
   width: 200px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     margin-left: 0;
     line-height: 85px;
     font-size: 67px;
@@ -155,8 +156,8 @@
   padding: 0;
   list-style: none;
   position: absolute;
-  left: 0;
-  top: 44px;
+  left: 17px;
+  top: 64px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -175,7 +176,7 @@
   font-weight: $regular;
   font-family: $roboto;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 21px;
   text-align: end;
   overflow-wrap: break-word;
 }
