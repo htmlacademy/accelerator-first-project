@@ -24,7 +24,7 @@
   }
 
   &:focus {
-    border: 2px solid #000000;
+    border: $border-black;
     color: $color-egyptian-blue;
     background-color: rgba(255, 255, 255, 0.80);
     outline: none;
