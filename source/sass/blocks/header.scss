@@ -13,9 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 139px 0 140px;
+    padding: 15px 102px 0 103px;
     max-width: 1336px;
-    min-height: 102px;
+    min-height: 101px;
   }
 }
 
@@ -45,48 +45,46 @@
   }
 }
 
-  .header__phone {
-    text-decoration: none;
-    color: $color-default-white;
-    letter-spacing: 0.4px;
-    font-weight: $semi-bold;
-    font-size: 27px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
+.header__phone {
+  text-decoration: none;
+  color: $color-default-white;
+  font-weight: $semi-bold;
+  font-size: 27px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 
 
-    &:disabled {
-      opacity: 0.5;
-      color: $color-ghost-white;
-    }
-
-    &:hover {
-      color: rgba(28, 51, 116, 0.5);
-    }
-
-    &:focus {
-      color: $color-resolution-blue;
-      outline: none;
-    }
-
-    &:active {
-      color: $color-sapphire;
-      border-bottom: 1px solid $color-sapphire;
-    }
-
-
-
-    @media (min-width: $tablet-width) {
-      font-size: 30px;
-      line-height: 24px;
-      font-weight: $bold;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-weight: $semi-bold;
-      font-size: 32px;
-      line-height: 31px;
-      letter-spacing: 0.018em;
-      margin: 0;
-    }
+  &:disabled {
+    opacity: 0.5;
+    color: $color-ghost-white;
   }
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: $bold;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: $semi-bold;
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+}

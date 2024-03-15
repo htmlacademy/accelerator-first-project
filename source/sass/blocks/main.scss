@@ -4,7 +4,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,7 +15,6 @@
 .main__about {
   width: 299px;
   display: flex;
-  padding-top: 50px;
   flex-direction: column;
   color: $color-default-white;
   font-family: $alumni;
@@ -56,6 +55,7 @@
     font-size: 54px;
     line-height: 57px;
     margin-bottom: 39px;
+    margin-right: 25px;
   }
 }
 
@@ -89,7 +89,7 @@
     padding: 27px 16px 25px 17px;
     align-self: end;
     margin: 0;
-    margin-right: 3px;
+    margin-right: 28px;
   }
 }
 
@@ -97,11 +97,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-
-
-  @media (min-width: $desktop-width) {
-    padding-left: 23px;
-  }
 }
 
 .main__list-header {
@@ -123,7 +118,7 @@
     letter-spacing: 0.06em;
     margin-bottom: 51px;
     margin-left: 0;
-    padding-right: 28px;
+    margin-right: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,7 +126,7 @@
     line-height: 110px;
     letter-spacing: 4px;
     margin-bottom: 40px;
-    padding-right: 26px;
+    margin-right: 28px;
   }
 }
 
