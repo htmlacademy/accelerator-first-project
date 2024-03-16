@@ -88,37 +88,45 @@
         <p class="gym__content-picture">
           <picture>
             <source type="image/webp" media="(min-width: 768px)" width="678" height="345"
-              srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x" />
+              srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)" width="320" height="280"
-              srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x" />
+              srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
 
-            <source type="image/webp" media="(min-width:768px)" src="img/gym/gym-tablet@1x.jpg"
-              srcset="img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
             <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
-              height="280" alt="Тренажерный зал" loading="lazy" />
+              height="280" alt="Тренажерный зал" loading="lazy">
           </picture>
         </p>
 
-        <div class="video" data-video>
-          <a class="video__link" data-video-link href="https://youtu.be/9TZXsZItgdw">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
             <picture>
-              <source type="image/webp" media="(min-width: 1336px)"
-                srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x" />
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/gym/video/video-tablet@1x.webp 1x, img/gym/video/video-tablet@2x.webp 2x" />
-              <source type="image/webp" media="(min-width: 320px)"
-                srcset="img/gym/video/video-tablet@1x.webp 1x, img/gym/video/video-tablet@2x.webp 2x" />
+              <source type="image/webp"
+                srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
 
-              <source type="image/webp" media="(min-width:1336px)" src="img/gym/video/video-desktop@1x.jpg"
-                srcset="img/gym/video/video-desktop@2x.jpg 2x" width="360" height="230">
-              <source type="image/webp" media="(min-width:768px)" src="img/gym/video/video-tablet@1x.jpg"
-                srcset="img/gym/video/video-tablet@2x.jpg 2x" width="270" height="170">
-              <img class="video__media" src="img/gym/video/video-mobile@1x.jpg"
-                srcset="img/gym/video/video-mobile@2x.jpg 2x" width="320" height="170" alt="Видео спортивного зала"
-                loading="lazy" data-video-media />
+              <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
+                src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" width="320" height="170"
+                alt="Видео спортивного зала" loading="lazy">
             </picture>
           </a>
-          <button class="video__button no-js" type="button" data-video-button aria-label="Запустить видео"></button>
+          <button class="video__button" type="button" aria-label="Запустить видео">
+            <svg class="video__button-img" width="100" height="100" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="video__button-border" opacity="0.2" cx="50" cy="50" r="49" stroke="#ED0233"
+                stroke-width="2" />
+              <circle class="video__button-shape" cx="50" cy="50" r="36" fill="url(#paint0-linear-1330-71)" />
+              <path class="video__button-center" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+              <defs>
+                <lineargradient id="paint0-linear-1330-71" x1="28.2373" y1="14" x2="90.1653" y2="21.664"
+                  gradientunits="userSpaceOnUse">
+                  <stop offset="none" stop-color="#ED0233" />
+                  <stop offset="1" stop-color="#003EB7" />
+                </lineargradient>
+              </defs>
+            </svg>
+
+          </button>
         </div>
       </div>
     </section>

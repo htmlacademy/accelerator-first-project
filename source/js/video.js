@@ -1,17 +1,15 @@
-// script взят с https://github.com/pepelsbey/playground/tree/main/12
-
-const findAllVideos = () => {
-  const videos = document.querySelectorAll('[data-video]');
+function findVideos() {
+  const videos = document.querySelectorAll('.video');
 
   for (let i = 0; i < videos.length; i++) {
     setupVideo(videos[i]);
   }
-};
+}
 
 function setupVideo(video) {
-  const link = document.querySelector('[data-video-link]');
-  const media = document.querySelector('[data-video-media]');
-  const button = document.querySelector('[data-video-button]');
+  const link = video.querySelector('.video__link');
+  const media = video.querySelector('.video__media');
+  const button = video.querySelector('.video__button');
   const id = parseMediaURL(media);
 
   video.addEventListener('click', () => {
@@ -23,7 +21,7 @@ function setupVideo(video) {
   });
 
   link.removeAttribute('href');
-  video.classList.add('is-active');
+  video.classList.add('video--enabled');
 }
 
 function parseMediaURL(media) {
@@ -51,4 +49,4 @@ function generateURL(id) {
   return `https://www.youtube.com/embed/${ id }${query}`;
 }
 
-findAllVideos();
+findVideos();
