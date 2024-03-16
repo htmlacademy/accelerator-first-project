@@ -7,8 +7,8 @@
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 39px 0 45px;
-    max-width: 676px;
+    padding: 17px 31px 0 45px;
+    max-width: 679px;
     min-height: 67px;
   }
 
@@ -78,6 +78,7 @@
     font-size: 30px;
     line-height: 24px;
     font-weight: $bold;
+    letter-spacing: 0.4px;
   }
 
   @media (min-width: $desktop-width) {

@@ -3,10 +3,16 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0 45px;
   }
 
+  @media (min-width: 769px) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding: 0 175px 0 240px;
   }
 }

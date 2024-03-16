@@ -30,7 +30,11 @@
 }
 
 .gym__content {
-  padding: 0 15px;
+  padding: 57px 15px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 15px 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 370px;
@@ -51,10 +55,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
-    line-height: 50px;
+    line-height: 42px;
     text-align: center;
-    margin-right: 15px;
     margin-bottom: 0;
+    letter-spacing: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,7 +81,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 0 50px;
+    padding: 20px 0 0;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,10 +123,15 @@
       margin-bottom: 33px;
 
       @media (min-width: $tablet-width) {
-        margin-bottom: 42px;
+        width: 502px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 36px;
       }
 
       @media (min-width: $desktop-width) {
+        width: inherit;
+        margin: 0;
         margin-bottom: 9px;
         margin-left: 11px;
       }
@@ -134,9 +146,11 @@
   @media (min-width: $tablet-width) {
     width: 678px;
     height: 345px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 660px;
     height: 400px;
   }
