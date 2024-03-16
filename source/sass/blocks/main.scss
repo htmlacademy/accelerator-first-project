@@ -69,14 +69,13 @@
   line-height: 12px;
   color: $color-default-white;
   text-transform: uppercase;
-  letter-spacing: 0.01em;
   cursor: pointer;
   user-select: none;
   word-break: break-word;
   background-color: transparent;
   border: $border-white;
-  margin-left: auto;
-  padding: 22px 5px 22px 7px;
+  margin: 0 auto;
+  padding: 22px 7px 22px 4px;
 
   @media (min-width: $tablet-width) {
     width: 172px;
@@ -144,7 +143,7 @@
   padding: 0;
   list-style: none;
   margin-top: 18px;
-  margin-left: 10px;
+  margin-left: 6px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

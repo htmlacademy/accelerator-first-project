@@ -74,7 +74,7 @@
               Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
               и&nbsp;идеальное место для укрепления тела
               и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
-              современным оборудованием для всех спортсменов.
+              современным оборудованием для&nbsp;всех спортсменов.
             </p>
             <p>
               В&nbsp;зале расположены отдельная зона для Crossfit
@@ -87,10 +87,15 @@
 
         <p class="gym__content-picture">
           <picture>
-            <source type="image/webp" width="660" height="400"
-              srcset="img/gym/gym@1x.webp 1x, img/gym/gym@2x.webp 2x" />
-            <img class="gym__img" src="img/gym/gym@1x.jpg" srcset="img/gym/gym@2x.jpg 2x" width="660" height="400"
-              alt="Тренажерный зал" loading="lazy" />
+            <source type="image/webp" media="(min-width: 768px)" width="678" height="345"
+              srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 320px)" width="320" height="280"
+              srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x" />
+
+            <source type="image/webp" media="(min-width:768px)" src="img/gym/gym-tablet@1x.jpg"
+              srcset="img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
+            <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
+              height="280" alt="Тренажерный зал" loading="lazy" />
           </picture>
         </p>
 

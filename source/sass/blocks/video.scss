@@ -1,11 +1,11 @@
 .video {
   position: static;
-  width: 100%;
-  height: 170px;
+  width: 320px;
+  height: 3px;
   transform: translate(0);
   background-color: $color-default-black;
   padding-bottom: 52.25%;
-  margin-top: 39px;
+  margin-top: 36px;
 
   &:hover {
 
@@ -17,6 +17,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 39px;
     position: absolute;
     padding: 0;
     margin: 0;
@@ -47,6 +48,7 @@
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: cover;
 }
 
 .video__button {
@@ -60,16 +62,23 @@
   background-color: transparent;
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
+  width: 72px;
+  height: 72px;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    width: 72px;
-    height: 72px;
+  &:hover {
+
   }
 
-  &:focus {
-    outline: 2px solid;
+  &:focus {}
+
+  &:active {}
+
+  &:disabled {}
+
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
   }
 }
