@@ -1,52 +1,50 @@
-function findVideos() {
-  const videos = document.querySelectorAll('.video');
+(function findVideo() {
+  const YTIMG_REGEXP = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
+  const setupVideo = (video) => {
+    const link = video.querySelector('.video__link');
+    const youtube = video.querySelector('.video__media');
+    const button = video.querySelector('.video__button');
 
-function setupVideo(video) {
-  const link = video.querySelector('.video__link');
-  const media = video.querySelector('.video__media');
-  const button = video.querySelector('.video__button');
-  const id = parseMediaURL(media);
+    const parseMediaURL = (media) => {
+      const url = media.src;
+      const match = url.match(YTIMG_REGEXP);
 
-  video.addEventListener('click', () => {
-    const iframe = createIframe(id);
+      return match[1];
+    };
 
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
-  });
 
-  link.removeAttribute('href');
-  video.classList.add('video--enabled');
-}
+    const createIframe = () => {
+      const id = parseMediaURL(youtube);
+      const iframe = document.createElement('iframe');
+      const query = '?rel=0&showinfo=0&autoplay=1';
 
-function parseMediaURL(media) {
-  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  const url = media.src;
-  const match = url.match(regexp);
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('allow', 'autoplay');
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${id}${query}`);
+      iframe.classList.add('video__media');
 
-  return match[1];
-}
+      return iframe;
+    };
 
-function createIframe(id) {
-  const iframe = document.createElement('iframe');
 
-  iframe.setAttribute('allowfullscreen', '');
-  iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', generateURL(id));
-  iframe.classList.add('video__media');
+    video.addEventListener('click', () => {
+      const iframe = createIframe();
 
-  return iframe;
-}
+      link.remove();
+      button.remove();
+      video.appendChild(iframe);
+    });
 
-function generateURL(id) {
-  const query = '?rel=0&showinfo=0&autoplay=1';
+    link.removeAttribute('href');
+    video.classList.add('video--enabled');
+  };
 
-  return `https://www.youtube.com/embed/${ id }${query}`;
-}
+  const setupVideos = () => {
+    document
+      .querySelectorAll('.video')
+      .forEach(setupVideo);
+  };
 
-findVideos();
+  setupVideos();
+})();
