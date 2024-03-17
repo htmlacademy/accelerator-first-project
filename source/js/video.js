@@ -1,11 +1,14 @@
 (function () {
+  const YT_REGEXP = /[?&]v=([^&#]+)/;
+  const VM_REGEXP = /vimeo.com\/(\d+)/;
+
   const parseMediaURL = (media) => media.src;
   const generateURL = (url) => {
     if (url.includes('youtube.com') || url.includes('youtu.be')) {
-      const videoId = url.match(/[?&]v=([^&#]+)/)[1];
+      const videoId = url.match(YT_REGEXP)[1];
       return `https://www.youtube.com/embed/${videoId}?rel=0&showinfo=0&autoplay=1`;
     } else if (url.includes('vimeo.com')) {
-      const videoId = url.match(/vimeo.com\/(\d+)/)[1];
+      const videoId = url.match(VM_REGEXP)[1];
       return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
     } else {
       return url;

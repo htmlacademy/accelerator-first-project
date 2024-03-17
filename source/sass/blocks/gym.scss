@@ -97,6 +97,14 @@
 
 .gym__text {
   margin-top: 36px;
+  font-family: $roboto;
+  font-weight: $light;
+  color: $color-sapphire;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 35px;
@@ -112,17 +120,10 @@
     margin-top: 95px;
   }
 
+// По требованию в ТЗ - эту часть нужно стилизовать каскадом от родителя
+
   p {
     margin: 0;
-    font-family: $roboto;
-    font-weight: $light;
-    color: $color-sapphire;
-
-    @media (max-width: $mobile-width) {
-      font-size: 14px;
-      line-height: 22px;
-    }
-
 
     &:first-child {
       margin-bottom: 36px;
