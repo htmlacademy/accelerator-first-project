@@ -11,11 +11,11 @@
       return url;
     }
   };
-  const createIframe = (id) => {
+  const createIframe = (url) => {
     const iframe = document.createElement('iframe');
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('allow', 'autoplay');
-    iframe.setAttribute('src', generateURL(id));
+    iframe.setAttribute('src', url);
     iframe.classList.add('video__media');
     return iframe;
   };
@@ -24,10 +24,11 @@
     const link = video.querySelector('.video__link');
     const media = video.querySelector('.video__media');
     const button = video.querySelector('.video__button');
-    const id = parseMediaURL(media);
+    const url = parseMediaURL(media);
+    const embedUrl = generateURL(url);
 
     video.addEventListener('click', () => {
-      const iframe = createIframe(id);
+      const iframe = createIframe(embedUrl);
       video.appendChild(iframe);
 
       link.remove();
