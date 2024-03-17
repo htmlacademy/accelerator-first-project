@@ -119,6 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 11px;
     margin-top: 95px;
   }
 
@@ -142,13 +143,6 @@
         width: inherit;
         margin: 0;
         margin-bottom: 9px;
-        margin-left: 11px;
-      }
-    }
-
-    &:not(:first-child) {
-      @media (min-width: $tablet-width) {
-        margin-left: 12px;
       }
     }
   }
