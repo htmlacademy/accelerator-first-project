@@ -7,26 +7,29 @@
     return match[1];
   };
 
-  const createIframe = (src) => {
+  const generateURL = (id) => {
+    const query = '?rel=0&showinfo=0&autoplay=1';
+
+    return `https://www.youtube.com/embed/${id}${query}`;
+  };
+
+  const createIframe = (id) => {
     const iframe = document.createElement('iframe');
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('allow', 'autoplay');
-    iframe.setAttribute('src', src);
+    iframe.setAttribute('src', generateURL(id));
     iframe.classList.add('video__media');
     return iframe;
   };
 
   const setupVideo = (video) => {
     const link = video.querySelector('.video__link');
-    const youtube = video.querySelector('.video__media');
+    const media = video.querySelector('.video__media');
     const button = video.querySelector('.video__button');
-
-    const id = parseMediaURL(youtube);
-    const query = '?rel=0&showinfo=0&autoplay=1';
-    const iframeSrc = `https://www.youtube.com/embed/${id}${query}`;
+    const id = parseMediaURL(media);
 
     video.addEventListener('click', () => {
-      const iframe = createIframe(iframeSrc);
+      const iframe = createIframe(id);
       video.appendChild(iframe);
 
       link.remove();
@@ -40,9 +43,7 @@
   const setupVideos = () => {
     document
       .querySelectorAll('.video')
-      .forEach((video) => {
-        setupVideo(video);
-      });
+      .forEach(setupVideo);
   };
 
   setupVideos();
