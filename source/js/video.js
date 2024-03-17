@@ -1,18 +1,16 @@
 (function () {
-  const YTIMG_REGEXP = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-
-  const parseMediaURL = (media) => {
-    const url = media.src;
-    const match = url.match(YTIMG_REGEXP);
-    return match[1];
+  const parseMediaURL = (media) => media.src;
+  const generateURL = (url) => {
+    if (url.includes('youtube.com') || url.includes('youtu.be')) {
+      const videoId = url.match(/[?&]v=([^&#]+)/)[1];
+      return `https://www.youtube.com/embed/${videoId}?rel=0&showinfo=0&autoplay=1`;
+    } else if (url.includes('vimeo.com')) {
+      const videoId = url.match(/vimeo.com\/(\d+)/)[1];
+      return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+    } else {
+      return url;
+    }
   };
-
-  const generateURL = (id) => {
-    const query = '?rel=0&showinfo=0&autoplay=1';
-
-    return `https://www.youtube.com/embed/${id}${query}`;
-  };
-
   const createIframe = (id) => {
     const iframe = document.createElement('iframe');
     iframe.setAttribute('allowfullscreen', '');
