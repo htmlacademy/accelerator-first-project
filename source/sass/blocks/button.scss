@@ -1,0 +1,97 @@
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  padding: 25px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $ff-roboto;
+  text-align: center;
+  color: $color-main-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  outline: 2px solid $color-main-dark;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+
+  &:hover {
+    color: $color-main-light;
+
+    background: $hover-button-background;
+    outline: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-main-light;
+
+    background: $focus-button-background;
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+
+    background: $active-button-background;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(16, 38, 84, 0.3);
+
+    background-color: transparent;
+    outline: 2px solid rgba(16, 38, 84, 0.3);
+
+    pointer-events: none;
+  }
+}
+
+.button--white-border {
+  padding: 22px;
+
+  color: $color-main-light;
+
+  outline: 2px solid $color-main-light;
+
+  &:hover {
+    color: $color-basic-accent;
+
+    background: $color-main-light;
+    outline: 2px solid $color-main-light;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-basic-accent;
+
+    background: rgba(255, 255, 255, 0.8);
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: $color-main-dark;
+
+    background-color: $color-main-light;
+    outline: 2px solid $color-main-light;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: transparent;
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+
+    pointer-events: none;
+  }
+}

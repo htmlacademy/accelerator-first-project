@@ -1,0 +1,17 @@
+.header {
+  padding-top: 15px;
+  padding-bottom: 34px;
+
+  color: $color-main-light;
+
+  background: $blue-to-red-background;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
+  }
+}

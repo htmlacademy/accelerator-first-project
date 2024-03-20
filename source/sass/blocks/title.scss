@@ -1,0 +1,21 @@
+.title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  font-family: $ff-alumni;
+  color: $color-main-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+  }
+
+  &--light {
+    color: $color-main-light;
+  }
+}

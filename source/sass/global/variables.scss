@@ -1,0 +1,44 @@
+// Colors
+$color-main-dark: #102654;
+$color-main-light: #ffffff;
+$color-basic-accent: #103aae;
+$color-accent: #1c3374;
+$color-status: #ff1553;
+$color-disabled: #f8f9fc;
+$color-background-banners: #ed0233;
+$color-background-footer: #030a1a;
+$color-form-error: #ff121f;
+$color-button-focus: #c8c9cc;
+
+// Gradient
+
+$blue-to-red-background: linear-gradient(
+  90deg,
+  #1c3477 0%,
+  #1c3477 0.01%,
+  #1a3578 39.11%,
+  #73184b 75.5%,
+  #b4022a 100%
+);
+$hover-button-background: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
+$focus-button-background: linear-gradient(
+  151deg,
+  rgba(237, 2, 51, 0.8) 0%,
+  rgba(0, 62, 183, 0.8) 100%
+);
+$active-button-background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+
+// Fonts
+
+$ff-roboto: "Roboto-Condensed", "Arial", sans-serif;
+$ff-alumni: "AlumniSans", "Arial", sans-serif;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1366px;
+$mobile-width-only: 767px;
+
+// Retina
+
+$retina: 2dppx;

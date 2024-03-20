@@ -1,22 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni/Alumni-Sans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni/Alumni-Sans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="stylesheet" href="sass/style.scss">
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
+</head>
+
+<body class="page-body">
+  <div class="wrapper">
+
+    <header class="header" data-test="hero">
+      <div class="header__container container">
+
+        <nav class="header__nav nav">
+          <a class="nav__logo" href="#" aria-current="page">
+            <picture>
+              <source media="(min-width: 1366px)" type="image/svg+xml" srcset="img/logo.svg#desktop" width="130" height="26">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/logo.svg#tablet" width="110" height="22">
+              <img src="img/logo.svg#mobile" width="100" height="20" alt="Логотип компании SUPERGYM.">
+            </picture>
+          </a>
+          <a class="nav__contacts link" href="tel:88005555555">8 800 555-55-55</a>
+        </nav>
+
+        <section class="header__hero hero">
+          <div class="hero__container">
+
+            <ul class="hero__content-list list-reset">
+              <li class="hero__content-item">Тренажёрный зал</li>
+              <li class="hero__content-item">Групповые занятия</li>
+              <li class="hero__content-item">Кардио-зона</li>
+            </ul>
+            <div class="hero__titles">
+              <p class="hero__titles-subtitle title title--light">Омск</p>
+              <h1 class="hero__titles-title">Фитнес центр</h1>
+            </div>
+
+            <a class="hero__content-button button button--white-border" href="#">Купить абонемент</a>
+
+            <div class="hero__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero-desktop@1x.webp 1x, img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
+                <img src="img/hero/hero-tablet@1x.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x" alt="Спортивный мужчина в чёрной футболке со значком Супермен." width="324" height="390">
+              </picture>
+            </div>
+
+          </div>
+
+        </section>
+      </div>
+
+    </header>
+
+    <main class="main-content">
+
+      <section class="about" data-test="about">
+
+        <div class="about__container container">
+          <div class="about__container-text">
+            <h2 class="about__container-title title">Тренажёрный зал</h2>
+            <h3 class="about__container-subtitle">Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
+
+        <div class="about__container-image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.webp 1x, img/about/about-main-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.webp 1x, img/about/about-main-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/about/about-main-mobile@1.webp 1x, img/about/about-main-mobile@2.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.jpg, img/about/about-main-desktop@2.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.jpg, img/about/about-main-tablet@2.jpg 2x">
+            <img src="img/about/about-main-mobile@1.jpg" srcset="img/about/about-main-mobile@2.jpg 2x" width="320" height="280" alt="Фото просторного и светлого тренажёрного зала со спортивным оборудованием.">
+          </picture>
+        </div>
+
+        <div class="about__container-video video-block">
+          <div class="div video-block__media">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.webp 1x, img/about/about-video-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.webp 1x, img/about/about-video-tablet@2.webp 2x">
+              <source type="image/webp" srcset="img/about/about-video-mobile@1.webp 1x, img/about/about-video-mobile@2.webp 2x">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.jpg, img/about/about-video-desktop@2.jpg 2x">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.jpg, img/about/about-video-tablet@2.jpg 2x">
+              <img src="img/about/about-video-mobile@1.jpg" srcset="img/about/about-video-mobile@2.jpg 2x" width="320" height="280" alt="Бесплатные интерактивные онлайн-курсы.">
+            </picture>
+          </div>
+
+          <button class="video-block__button button-reset" type="button" aria-label="Воспроизвести видео">
+            <svg class="video-block__button-icon" width="12" height="12">
+              <use href="/__spritemap#sprite-play"></use>
+            </svg>
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
+     примеры требуемых атрибутов data-test="*"
+
+
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
@@ -25,8 +129,8 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    <div data-test="footer">footer</div> -->
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
