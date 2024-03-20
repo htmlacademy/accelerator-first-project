@@ -4,7 +4,7 @@
   column-gap: 21px;
 
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 49px;
+  row-gap: 48px;
 
   @media (min-width: $tablet-width) {
     column-gap: 28px;
@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 72px;
-    padding-left: 147px;
+    padding-left: 150px;
 
     column-gap: 0;
 
@@ -32,6 +32,7 @@
   @media (min-width: $tablet-width) {
     align-self: center;
 
+    grid-row: 1 / 3;
     margin-block: 0;
   }
 }

@@ -15,8 +15,8 @@ module.exports = {
       {
         resolveNestedSelectors: true,
         message: function expected(selectorValue) {
-        return `Expected class selector "${selectorValue}" to match BEM CSS pattern https://en.bem.info/methodology/css. Selector validation tool: https://regexr.com/3apms`;
-      },
+          return `Expected class selector "${selectorValue}" to match BEM CSS pattern https://en.bem.info/methodology/css. Selector validation tool: https://regexr.com/3apms`;
+        },
       },
     ],
     "selector-max-id": 0,
