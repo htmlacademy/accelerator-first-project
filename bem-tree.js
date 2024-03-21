@@ -3,4 +3,4 @@ import vfs from 'vinyl-fs';
 
 vfs
   .src(['./source/**/*.html', '!./source/**/vendor/*.html'])
-  .pipe(bemlinter())
+  .pipe(bemlinter());

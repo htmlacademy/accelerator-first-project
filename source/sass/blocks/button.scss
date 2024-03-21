@@ -1,0 +1,99 @@
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  padding: 22px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $ff-roboto;
+  text-align: center;
+  color: $color-main-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid $color-main-dark;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+
+  &:hover {
+    color: $color-main-light;
+
+    background: $hover-button-background;
+    border: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-main-light;
+
+    background: $focus-button-background;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+
+    background: $color-main-light;
+    border: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(16, 38, 84, 0.3);
+
+    background-color: transparent;
+    border: 2px solid rgba(16, 38, 84, 0.3);
+
+    pointer-events: none;
+  }
+}
+
+.button--white-border {
+  color: $color-main-light;
+
+  border: 2px solid $color-main-light;
+
+  &:hover {
+    color: $color-basic-accent;
+
+    background: $color-main-light;
+    border: 2px solid $color-main-light;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-basic-accent;
+
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    color: $color-main-dark;
+
+    background-color: $color-main-light;
+    border: 2px solid $color-main-light;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+
+    pointer-events: none;
+  }
+}
