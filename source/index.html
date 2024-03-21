@@ -65,47 +65,53 @@
 
     <main class="main-content">
 
-      <section class="about" data-test="about">
+      <section class="about container" data-test="about">
 
-        <div class="about__container container">
+        <div class="about__container">
+
           <div class="about__container-text">
             <h2 class="about__container-title title">Тренажёрный зал</h2>
             <h3 class="about__container-subtitle">Просторный зал площадью 900 кв/м</h3>
             <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
             <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-        </div>
 
-        <div class="about__container-image">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.webp 1x, img/about/about-main-desktop@2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.webp 1x, img/about/about-main-tablet@2.webp 2x">
-            <source type="image/webp" srcset="img/about/about-main-mobile@1.webp 1x, img/about/about-main-mobile@2.webp 2x">
-            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.jpg, img/about/about-main-desktop@2.jpg 2x">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.jpg, img/about/about-main-tablet@2.jpg 2x">
-            <img src="img/about/about-main-mobile@1.jpg" srcset="img/about/about-main-mobile@2.jpg 2x" width="320" height="280" alt="Фото просторного и светлого тренажёрного зала со спортивным оборудованием.">
-          </picture>
-        </div>
-
-        <div class="about__container-video video-block">
-          <div class="div video-block__media">
+          <div class="about__container-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.webp 1x, img/about/about-video-desktop@2.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.webp 1x, img/about/about-video-tablet@2.webp 2x">
-              <source type="image/webp" srcset="img/about/about-video-mobile@1.webp 1x, img/about/about-video-mobile@2.webp 2x">
-              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.jpg, img/about/about-video-desktop@2.jpg 2x">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.jpg, img/about/about-video-tablet@2.jpg 2x">
-              <img src="img/about/about-video-mobile@1.jpg" srcset="img/about/about-video-mobile@2.jpg 2x" width="320" height="280" alt="Бесплатные интерактивные онлайн-курсы.">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.webp 1x, img/about/about-main-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.webp 1x, img/about/about-main-tablet@2.webp 2x">
+              <source type="image/webp" srcset="img/about/about-main-mobile@1.webp 1x, img/about/about-main-mobile@2.webp 2x">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-main-desktop@1.jpg, img/about/about-main-desktop@2.jpg 2x">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-main-tablet@1.jpg, img/about/about-main-tablet@2.jpg 2x">
+              <img src="img/about/about-main-mobile@1.jpg" srcset="img/about/about-main-mobile@2.jpg 2x" width="320" height="280" alt="Фото просторного и светлого тренажёрного зала со спортивным оборудованием.">
             </picture>
           </div>
 
-          <button class="video-block__button button-reset" type="button" aria-label="Воспроизвести видео">
-            <svg class="video-block__button-icon" width="12" height="12">
-              <use href="/__spritemap#sprite-play"></use>
-            </svg>
-          </button>
+          <div class="about__container-video video-block">
+            <div class="div video-block__media">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.webp 1x, img/about/about-video-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.webp 1x, img/about/about-video-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/about/about-video-mobile@1.webp 1x, img/about/about-video-mobile@2.webp 2x">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1.jpg, img/about/about-video-desktop@2.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-video-tablet@1.jpg, img/about/about-video-tablet@2.jpg 2x">
+                <img src="img/about/about-video-mobile@1.jpg" srcset="img/about/about-video-mobile@2.jpg 2x" width="320" height="280" alt="Бесплатные интерактивные онлайн-курсы.">
+              </picture>
+            </div>
+
+            <button class="video-block__button button-reset" type="button" aria-label="Воспроизвести видео">
+              <svg class="video-block__button-icon" width="12" height="12">
+                <use href="/__spritemap#sprite-play"></use>
+              </svg>
+            </button>
+
+          </div>
 
         </div>
+
+      </section>
+
+      <section class="price container" data-test="price">
 
       </section>
 
@@ -121,7 +127,7 @@
      примеры требуемых атрибутов data-test="*"
 
 
-    <div data-test="price">price</div>
+
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>

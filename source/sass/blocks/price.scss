@@ -1,0 +1,16 @@
+.price {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: $color-background-price;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

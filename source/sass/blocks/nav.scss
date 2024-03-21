@@ -86,7 +86,7 @@
 
   &:disabled,
   &--disabled {
-    color: $color-disabled;
+    color: $color-background-price;
 
     pointer-events: none;
   }
