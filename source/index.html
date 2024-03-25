@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni/Alumni-Sans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni/Alumni-Sans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="sass/style.scss">
@@ -19,7 +19,7 @@
 <body class="page-body">
   <div class="wrapper">
 
-    <header class="header" data-test="hero">
+    <header class="header" data-test="hero" id="hero">
       <div class="header__container container">
 
         <nav class="header__nav nav">
@@ -111,7 +111,173 @@
 
       </section>
 
-      <section class="price container" data-test="price">
+      <section class="price" data-test="price">
+
+        <div class="price__container container">
+
+          <h2 class="price__title title">Абонементы</h2>
+
+          <ul class="price__tabs-list list-reset">
+            <li class="price__tab-item">
+              <button class="price__tab button-reset price__tab--active" type="button" data-tab="month-1">1 месяц</button>
+            </li>
+            <li class="price__tab-item">
+              <button class="price__tab button-reset" type="button" data-tab="month-6">6 месяцев</button>
+            </li>
+            <li class="price__tab-item">
+              <button class="price__tab button-reset" type="button" data-tab="month-12">12 месяцев</button>
+            </li>
+          </ul>
+
+          <ul class="price__list list-reset price__list--active" id="month-1">
+            <li class="price__item">
+              <h3 class="price__subtitle">С тренером</h3>
+              <span class="price__information">12 занятий</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="5000">5000</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+            <li class="price__item price__item--highlighted">
+              <h3 class="price__subtitle">Дневной</h3>
+              <span class="price__information">с 8:00 до 17:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="1700">1700</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+            <li class="price__item price__item--full-day">
+              <h3 class="price__subtitle">Полный день</h3>
+              <span class="price__information">с 8:00 до 22:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="2700">2700</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="price__list list-reset" id="month-6">
+            <li class="price__item">
+              <h3 class="price__subtitle">С тренером</h3>
+              <span class="price__information">12 занятий</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="30 000">30 000</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+            <li class="price__item price__item--highlighted">
+              <h3 class="price__subtitle">Дневной</h3>
+              <span class="price__information">с 8:00 до 17:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="10 200">10 200</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button price__button--active button" href="#"><span class="price__span">Купить абонемент</span></a>
+            </li>
+            <li class="price__item price__item--full-day">
+              <h3 class="price__subtitle">Полный день</h3>
+              <span class="price__information">с 8:00 до 22:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="16 200">16 200</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="price__list list-reset" id="month-12">
+            <li class="price__item">
+              <h3 class="price__subtitle">С тренером</h3>
+              <span class="price__information">12 занятий</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="60 000">60 000</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+            <li class="price__item price__item--highlighted">
+              <h3 class="price__subtitle">Дневной</h3>
+              <span class="price__information">с 8:00 до 17:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="20 400">20 400</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+            <li class="price__item price__item--full-day">
+              <h3 class="price__subtitle">Полный день</h3>
+              <span class="price__information">с 8:00 до 22:00</span>
+              <div class="price__price-wrap">
+                <span class="price__price" data-price="32 400">32 400</span>
+                <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <use href="/__spritemap#sprite-ruble"></use>
+                </svg>
+              </div>
+              <a class="price__button button" href="#hero">
+                <span class="price__span">Купить абонемент</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section class="games container" data-test="games">
+        <div class="games__card">
+          <div class="games__card-content">
+            <h2 class="games__card-title">super games</h2>
+            <div class="games__card-date">
+              <dl class="games__date">
+                <dt class="games__term">Дата</dt>
+                <dd class="games__description">7<span>Марта<br>2019</span></dd>
+              </dl>
+              <dl class="games__date">
+                <dt class="games__term">Время</dt>
+                <dd class="games__description">12:00</dd>
+              </dl>
+            </div>
+            <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
+            <a class="games__button button button--white-border" href="#hero">Заполнить заявку</a>
+          </div>
+        </div>
+        <div class="games__image">
+
+        </div>
 
       </section>
 
@@ -128,7 +294,6 @@
 
 
 
-    <div data-test="games">games</div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>

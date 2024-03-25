@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
+  align-content: center;
   padding: 22px;
 
   font-weight: 700;
@@ -41,6 +41,7 @@
 
     background: $focus-button-background;
     border: 2px solid #000000;
+    outline: none;
   }
 
   &:active {
@@ -79,6 +80,7 @@
 
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid #000000;
+    outline: none;
   }
 
   &:active {

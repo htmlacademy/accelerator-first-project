@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 66px;
+  padding-bottom: 66px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
-    margin-bottom: 60px;
+    padding-bottom: 58px;
   }
 }
 
@@ -41,17 +41,21 @@
 
   font-weight: 700;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 22px;
   font-family: $ff-roboto;
   color: $color-main-light;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 2px;
+
     font-size: 26px;
+    line-height: 26px;
   }
 
   &::after {
@@ -74,6 +78,8 @@
   &:focus,
   &:focus-visible {
     color: $color-accent;
+
+    outline: none;
   }
 
   &:active {
