@@ -41,7 +41,7 @@
 
 .price__container {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
@@ -277,7 +277,7 @@
   height: 100%;
 
   border: 7px solid transparent;
-  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
   opacity: 0;
 }
@@ -414,6 +414,10 @@
 }
 
 .price__item.hovered::before {
+  opacity: 1;
+}
+
+.price__item.activated::before {
   opacity: 1;
 }
 

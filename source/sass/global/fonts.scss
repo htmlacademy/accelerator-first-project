@@ -4,9 +4,8 @@
   font-family: "RobotoCondensed";
 
   font-display: swap;
-  src:
-    url("../../fonts/roboto/Roboto-Condensed-Bold700.woff2") format("woff2"),
-    url("../../fonts/roboto/Roboto-Condensed-Bold700.woff") format("woff");
+  src: url("../../fonts/roboto/700Roboto-Condensed-Bold.woff2") format("woff2"),
+    url("../../fonts/roboto/700Roboto-Condensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -15,9 +14,8 @@
   font-family: "RobotoCondensed";
 
   font-display: swap;
-  src:
-    url("../../fonts/roboto/Roboto-Condensed-Light300.woff2") format("woff2"),
-    url("../../fonts/roboto/Roboto-Condensed-Light300.woff") format("woff");
+  src: url("../../fonts/roboto/300Roboto-Condensed-Light.woff2") format("woff2"),
+    url("../../fonts/roboto/300Roboto-Condensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -26,10 +24,9 @@
   font-family: "RobotoCondensed";
 
   font-display: swap;
-  src:
-    url("../../fonts/roboto/Roboto-Condensed-Regular400.woff2")
-    format("woff2"),
-    url("../../fonts/roboto/Roboto-Condensed-Regular400.woff") format("woff");
+  src: url("../../fonts/roboto/400Roboto-Condensed-Regular.woff2")
+      format("woff2"),
+    url("../../fonts/roboto/400Roboto-Condensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -38,8 +35,7 @@
   font-family: "AlumniSans";
 
   font-display: swap;
-  src:
-    url("../../fonts/alumni/alumni-sans-800.woff2") format("woff2"),
+  src: url("../../fonts/alumni/alumni-sans-800.woff2") format("woff2"),
     url("../../fonts/alumni/alumni-sans-800.woff") format("woff");
 }
 
@@ -49,7 +45,6 @@
   font-family: "AlumniSans";
 
   font-display: swap;
-  src:
-    url("../../fonts/alumni/alumni-sans-600.woff2") format("woff2"),
+  src: url("../../fonts/alumni/alumni-sans-600.woff2") format("woff2"),
     url("../../fonts/alumni/alumni-sans-600.woff") format("woff");
 }

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Bold700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Light300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/Roboto-Condensed-Regular400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/700Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/300Roboto-Condensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/400Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
@@ -136,6 +136,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="5000">5000</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -149,6 +150,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="1700">1700</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -162,6 +164,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="2700">2700</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -178,6 +181,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="30 000">30 000</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -191,6 +195,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="10 200">10 200</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -202,6 +207,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="16 200">16 200</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -218,6 +224,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="60 000">60 000</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -231,6 +238,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="20 400">20 400</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -244,6 +252,7 @@
               <div class="price__price-wrap">
                 <span class="price__price" data-price="32 400">32 400</span>
                 <svg class="price__price-icon" width="24" height="34" aria-hidden="true">
+                  <title class="visually-hidden">Знак рубля.</title>
                   <use href="/__spritemap#sprite-ruble"></use>
                 </svg>
               </div>
@@ -259,24 +268,31 @@
 
       <section class="games container" data-test="games">
         <div class="games__card">
-          <div class="games__card-content">
+
+          <div class="games__card-text">
             <h2 class="games__card-title">super games</h2>
-            <div class="games__card-date">
-              <dl class="games__date">
-                <dt class="games__term">Дата</dt>
-                <dd class="games__description">7<span>Марта<br>2019</span></dd>
-              </dl>
-              <dl class="games__date">
-                <dt class="games__term">Время</dt>
-                <dd class="games__description">12:00</dd>
-              </dl>
-            </div>
-            <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
-            <a class="games__button button button--white-border" href="#hero">Заполнить заявку</a>
+            <dl class="games__date">
+              <dt class="games__term">Дата</dt>
+              <dd class="games__description">7<span>Марта<br>2019</span></dd>
+            </dl>
+            <dl class="games__time">
+              <dt class="games__term">Время</dt>
+              <dd class="games__description">12:00</dd>
+            </dl>
           </div>
+
+          <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
+          <a class="games__button button button--white-border" href="#hero">Заполнить заявку</a>
         </div>
         <div class="games__image">
-
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desktop@1.webp 1x, img/games/games-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/games/games-tablet@1.webp 1x, img/games/games-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/games/games-mobile@1.webp 1x, img/games/games-mobile@2.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games-desktop@1.jpg, img/games/games-desktop@2.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games-tablet@1.jpg, img/games/games-tablet@2.jpg 2x">
+            <img src="img/games/games-mobile@1.jpg" srcset="img/games/games-mobile@2.jpg 2x" width="290" height="290" alt="Мужчина споривного телосложения ударяет рукой в пол и разлетается пыль.">
+          </picture>
         </div>
 
       </section>
