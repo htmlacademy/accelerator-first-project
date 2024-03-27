@@ -2,6 +2,9 @@
 
 @import "vendor/normalize";
 
+// Swiper 11.0.7
+@import "vendor/swiper";
+
 // Global
 
 @import "global/variables";
@@ -21,3 +24,4 @@
 @import "blocks/video-block";
 @import "blocks/price";
 @import "blocks/games";
+@import "blocks/jury";

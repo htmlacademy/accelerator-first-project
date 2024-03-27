@@ -413,7 +413,7 @@
   }
 }
 
-.price__item.hovered::before {
+.price__item.price__item--hover::before {
   opacity: 1;
 }
 

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preload" href="fonts/roboto/700Roboto-Condensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/300Roboto-Condensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto/400Roboto-Condensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni/alumni-sans-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni/alumni-sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
@@ -297,6 +297,169 @@
 
       </section>
 
+      <section class="jury container" data-test="juri">
+        <h2 class="jury__title title">Жюри</h2>
+        <div class="jury__container">
+
+          <button class="jury__button jury__button--prev button-reset swiper-button-prev" type="button" aria-label="Предыдущий слайд.">
+            <svg width="16" height="32" aria-hidden="true">
+              <title class="visually-hidden">Предыдущий слайд.</title>
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+
+          <button class="jury__button jury__button--next button-reset swiper-button-next" type="button" aria-label="Следующий слайд.">
+            <svg width="16" height="32" aria-hidden="true">
+              <title class="visually-hidden">Стрелка слайдера вперёд.</title>
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+
+          <div class="jury__swiper swiper">
+            <ul class="jury__list list-reset swiper-wrapper">
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Анна Павлова</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/1-jury-trainer@1.webp 1x, img/jury/1-jury-trainer@2.webp 2x">
+                  <img src="img/jury/1-jury-trainer@1.jpg" srcset="img/jury/1-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участниу жюри Анна Павлова, девушка с длинными тёмными волосами и светлыми глазами.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Анна Павлова</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Алексей Лавров</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/2-jury-trainer@1.webp 1x, img/jury/2-jury-trainer@2.webp 2x">
+                  <img src="img/jury/2-jury-trainer@1.jpg" srcset="img/jury/2-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участник жюри Алексей Лавров, парень с бородой в чёрном свитерее.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Алексей Лавров</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Александр Пашков</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/3-jury-trainer@1.webp 1x, img/jury/3-jury-trainer@2.webp 2x">
+                  <img src="img/jury/3-jury-trainer@1.jpg" srcset="img/jury/3-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участник жюри Александр Пашков, парень спортивного телосложения и в очках.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Александр Пашков</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Мария Кетова</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/4-jury-trainer@1.webp 1x, img/jury/4-jury-trainer@2.webp 2x">
+                  <img src="img/jury/4-jury-trainer@1.jpg" srcset="img/jury/4-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участница жюри Мария Кетова, девушка с длинными темными волосами в шортах и толстовке.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Мария Кетова</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Инструктор Кекс</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/5-jury-trainer@1.webp 1x, img/jury/5-jury-trainer@2.webp 2x">
+                  <img src="img/jury/5-jury-trainer@1.jpg" srcset="img/jury/5-jury-trainer@2.jpg 2x" width="260" height="300" alt="Инструктор Кекс.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Инструктор Кекс</h4>
+                  <p class="jury__info-subtitle">Front-end developer</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">HTML/CSS/JS Level 100</li>
+                    <li class="jury__info-item">Победитель чемпионата HTML academy по Front-end</li>
+                    <li class="jury__info-item">Босс HTML Academy</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Алексей Лавров</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/6-jury-trainer@1.webp 1x, img/jury/6-jury-trainer@2.webp 2x">
+                  <img src="img/jury/6-jury-trainer@1.jpg" srcset="img/jury/6-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участник жюри Алексей Лавров, парень с бородой в чёрном свитерее.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Алексей Лавров</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Александр Пашков</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/7-jury-trainer@1.webp 1x, img/jury/7-jury-trainer@2.webp 2x">
+                  <img src="img/jury/7-jury-trainer@1.jpg" srcset="img/jury/7-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участник жюри Александр Пашков, парень спортивного телосложения и в очках.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Александр Пашков</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="jury__item swiper-slide">
+                <h3 class="jury__item-title">Мария Кетова</h3>
+                <picture>
+                  <source type="image/webp" srcset="img/jury/8-jury-trainer@1.webp 1x, img/jury/8-jury-trainer@2.webp 2x">
+                  <img src="img/jury/8-jury-trainer@1.jpg" srcset="img/jury/8-jury-trainer@2.jpg 2x" width="260" height="300" alt="Участница жюри Мария Кетова, девушка с длинными темными волосами в шортах и толстовке.">
+                </picture>
+                <div class="jury__info">
+                  <h4 class="jury__info-title">Мария Кетова</h4>
+                  <p class="jury__info-subtitle">CrossFit</p>
+                  <ul class="jury__info-list">
+                    <li class="jury__info-item">Certified Level 3 Trainer</li>
+                    <li class="jury__info-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury__info-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
   </div>
@@ -317,6 +480,7 @@
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
+  <script type="module" src="js/vendor.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 
