@@ -31,6 +31,7 @@ export function initSlider() {
     },
   });
 
+  return jurySwiper;
 
   /*  const reviewsSlider = new Swiper('.reviews__slider', {
     direction: 'horizontal',
